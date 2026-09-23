@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "parameters": "",
+  "projects": [
+    {
+      "path": "/Users/achim/dev/microhack-challenge-2/PhotoAlbum/PhotoAlbum/PhotoAlbum.csproj",
+      "frameworks": [
+        {
+          "framework": "net10.0",
+          "topLevelPackages": [
+            {
+              "id": "Microsoft.EntityFrameworkCore.Design",
+              "requestedVersion": "10.0.0",
+              "resolvedVersion": "10.0.0"
+            },
+            {
+              "id": "Microsoft.EntityFrameworkCore.SqlServer",
+              "requestedVersion": "10.0.0",
+              "resolvedVersion": "10.0.0"
+            },
+            {
+              "id": "SixLabors.ImageSharp",
+              "requestedVersion": "3.1.11",
+              "resolvedVersion": "3.1.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/Users/achim/dev/microhack-challenge-2/PhotoAlbum/PhotoAlbum.Tests/PhotoAlbum.Tests.csproj",
+      "frameworks": [
+        {
+          "framework": "net10.0",
+          "topLevelPackages": [
+            {
+              "id": "coverlet.collector",
+              "requestedVersion": "6.0.2",
+              "resolvedVersion": "6.0.2"
+            },
+            {
+              "id": "Microsoft.AspNetCore.Mvc.Testing",
+              "requestedVersion": "10.0.0",
+              "resolvedVersion": "10.0.0"
+            },
+            {
+              "id": "Microsoft.EntityFrameworkCore.InMemory",
+              "requestedVersion": "10.0.0",
+              "resolvedVersion": "10.0.0"
+            },
+            {
+              "id": "Microsoft.NET.Test.Sdk",
+              "requestedVersion": "17.12.0",
+              "resolvedVersion": "17.12.0"
+            },
+            {
+              "id": "xunit",
+              "requestedVersion": "2.9.2",
+              "resolvedVersion": "2.9.2"
+            },
+            {
+              "id": "xunit.runner.visualstudio",
+              "requestedVersion": "2.8.2",
+              "resolvedVersion": "2.8.2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

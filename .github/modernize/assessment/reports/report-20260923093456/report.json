@@ -1,0 +1,1451 @@
+{
+  "version": "1.0.0",
+  "producer": ".NET AppCAT CLI",
+  "metadata": {
+    "analysisStartTime": "2026-09-23T09:34:56.368868Z",
+    "analysisEndTime": "2026-09-23T09:34:57.4188Z",
+    "privacyMode": "Restricted",
+    "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2271074",
+    "targetIds": [
+      "AppService.Windows",
+      "AppService.Linux",
+      "AKS.Linux",
+      "AKS.Windows",
+      "ACA",
+      "AppServiceContainer.Linux",
+      "AppServiceContainer.Windows",
+      "AppServiceManagedInstance.Windows"
+    ],
+    "targetDisplayNames": [
+      "Azure App Service",
+      "Azure Kubernetes Service",
+      "Azure Container Apps",
+      "Azure App Service Container",
+      "Azure App Service Managed Instance"
+    ],
+    "os": [],
+    "capabilities": [],
+    "domains": [
+      "dotnet-upgrade",
+      "cloud-readiness"
+    ],
+    "mode": "issue-only",
+    "minimumCveSeverity": null
+  },
+  "summary": {
+    "totalProjects": 2,
+    "totalIssues": 8,
+    "totalIncidents": 28,
+    "totalEffort": 78,
+    "charts": {
+      "severity": {
+        "mandatory": 1,
+        "optional": 4,
+        "potential": 23,
+        "information": 0
+      },
+      "category": {
+        "Scale": 1,
+        "Database": 1,
+        "Identity": 1,
+        "Security": 3,
+        "Configuration": 3,
+        "Connection": 1,
+        "Local": 18
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "PhotoAlbum/PhotoAlbum.csproj",
+      "issues": 8,
+      "storyPoints": 60,
+      "properties": {
+        "appName": "PhotoAlbum",
+        "frameworks": [
+          "net9.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ]
+      },
+      "incidents": [
+        {
+          "ruleId": "Scale.0001",
+          "incidentId": "07f824af-d8bf-42fc-b312-0db3a529610f",
+          "location": "PhotoAlbum/PhotoAlbum.csproj",
+          "locationKind": "File",
+          "targets": {
+            "AppService.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "optional",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Database.0002",
+          "incidentId": "ea626acf-85c6-4fbe-9b84-380839a0642c",
+          "location": "PhotoAlbum/Web.config",
+          "locationKind": "File",
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Identity.0002",
+          "incidentId": "83394107-7d9e-4211-9f8c-9566779e30a7",
+          "location": "PhotoAlbum/Web.config",
+          "locationKind": "File",
+          "targets": {
+            "AppService.Windows": {
+              "severity": "mandatory",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "mandatory",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "mandatory",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "mandatory",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "mandatory",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "mandatory",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "mandatory",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Security.0002",
+          "incidentId": "e067b0cb-912b-4824-b278-bee167a4af6e",
+          "location": "PhotoAlbum/Web.config",
+          "locationKind": "File",
+          "targets": {
+            "AppService.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "optional",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Configuration.0003",
+          "incidentId": "3a99e011-3107-416a-99da-6e1cce583782",
+          "location": "PhotoAlbum/appsettings.json",
+          "locationKind": "File",
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 1
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Configuration.0003",
+          "incidentId": "4c189d1b-2c0c-4e9d-939d-bd6159c44513",
+          "location": "PhotoAlbum/appsettings.json",
+          "locationKind": "File",
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 1
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Configuration.0003",
+          "incidentId": "8dae31c5-b6f5-4f88-a23f-0ced7b12526e",
+          "location": "PhotoAlbum/appsettings.json",
+          "locationKind": "File",
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 1
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 1
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Connection.0001",
+          "incidentId": "85f01e44-4ee4-4036-8677-093fa217eeeb",
+          "location": "PhotoAlbum/appsettings.json",
+          "locationKind": "File",
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "a526da45-6dde-458e-949d-1e3d9519ccaa",
+          "location": "PhotoAlbum/Program.cs",
+          "locationKind": "File",
+          "line": 41,
+          "column": 4,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "2cf6a27f-448f-4322-a4b5-5fea38bb9a10",
+          "location": "PhotoAlbum/Program.cs",
+          "locationKind": "File",
+          "line": 39,
+          "column": 5,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Security.0003",
+          "incidentId": "3eedff72-70d4-43eb-8aa6-64964f198651",
+          "location": "PhotoAlbum/Pages/Login.cshtml.cs",
+          "locationKind": "File",
+          "line": 55,
+          "column": 27,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "mandatory",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Security.0003",
+          "incidentId": "a8527285-0a5d-4d07-900b-06ad022553d5",
+          "location": "PhotoAlbum/Pages/Login.cshtml.cs",
+          "locationKind": "File",
+          "line": 42,
+          "column": 43,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "optional",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "mandatory",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "f4f0816e-deb8-4ad1-aa0e-01f8ceef7197",
+          "location": "PhotoAlbum/Pages/PhotoFile.cshtml.cs",
+          "locationKind": "File",
+          "line": 60,
+          "column": 27,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "1e484bf1-76f4-4f77-826c-88217e3a4940",
+          "location": "PhotoAlbum/Pages/PhotoFile.cshtml.cs",
+          "locationKind": "File",
+          "line": 66,
+          "column": 44,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "8d56ea2f-03f2-429d-a80e-69061aab4a4f",
+          "location": "PhotoAlbum/Pages/PhotoFile.cshtml.cs",
+          "locationKind": "File",
+          "line": 58,
+          "column": 40,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "defbe3ea-a9e5-4de7-a517-8ff4be3ea52a",
+          "location": "PhotoAlbum/Services/PhotoService.cs",
+          "locationKind": "File",
+          "line": 149,
+          "column": 16,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "1fd9c18c-4607-4f69-ba8b-3f0f4c3551db",
+          "location": "PhotoAlbum/Services/PhotoService.cs",
+          "locationKind": "File",
+          "line": 200,
+          "column": 24,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "bf7e9d50-61fc-432b-b587-70575c925e7f",
+          "location": "PhotoAlbum/Services/PhotoService.cs",
+          "locationKind": "File",
+          "line": 243,
+          "column": 20,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "80a180f8-f248-4934-9eaa-8355726eef97",
+          "location": "PhotoAlbum/Services/PhotoService.cs",
+          "locationKind": "File",
+          "line": 147,
+          "column": 17,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "279a5655-f290-4147-b089-0cb36b84b38f",
+          "location": "PhotoAlbum/Services/PhotoService.cs",
+          "locationKind": "File",
+          "line": 198,
+          "column": 24,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "5e946123-b12c-4347-b892-be193bc0a2aa",
+          "location": "PhotoAlbum/Services/PhotoService.cs",
+          "locationKind": "File",
+          "line": 241,
+          "column": 20,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "e3ffd27a-505e-4cbc-807e-6e41dcdfd924",
+          "location": "PhotoAlbum/Services/PhotoService.cs",
+          "locationKind": "File",
+          "line": 157,
+          "column": 39,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        }
+      ]
+    },
+    {
+      "path": "PhotoAlbum.Tests/PhotoAlbum.Tests.csproj",
+      "issues": 1,
+      "storyPoints": 18,
+      "properties": {
+        "appName": "PhotoAlbum.Tests",
+        "frameworks": [
+          "net9.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ]
+      },
+      "incidents": [
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "f8adf94b-ed20-4f1e-acb1-478a968a369b",
+          "location": "PhotoAlbum.Tests/Unit/Services/PhotoServiceTests.cs",
+          "locationKind": "File",
+          "line": 30,
+          "column": 39,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "d0f7fc79-0960-41cc-b6a3-4b42c881c82f",
+          "location": "PhotoAlbum.Tests/Unit/Services/PhotoServiceTests.cs",
+          "locationKind": "File",
+          "line": 209,
+          "column": 21,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "ea41f4b6-7187-431d-9ad9-f698b92c931d",
+          "location": "PhotoAlbum.Tests/Unit/Services/PhotoServiceTests.cs",
+          "locationKind": "File",
+          "line": 123,
+          "column": 20,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "38000a8e-86a1-4fe8-ab2b-f2ab9899e7a6",
+          "location": "PhotoAlbum.Tests/Unit/Services/PhotoServiceTests.cs",
+          "locationKind": "File",
+          "line": 31,
+          "column": 8,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "ba8d488d-904f-4872-ade0-ea6ae46247de",
+          "location": "PhotoAlbum.Tests/Unit/Services/PhotoServiceTests.cs",
+          "locationKind": "File",
+          "line": 248,
+          "column": 12,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        },
+        {
+          "ruleId": "Local.0003",
+          "incidentId": "e9f18313-a289-4529-8840-094b5cb19dae",
+          "location": "PhotoAlbum.Tests/Unit/Services/PhotoServiceTests.cs",
+          "locationKind": "File",
+          "line": 246,
+          "column": 12,
+          "targets": {
+            "AppService.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppService.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AKS.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "ACA": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Linux": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceContainer.Windows": {
+              "severity": "potential",
+              "effort": 3
+            },
+            "AppServiceManagedInstance.Windows": {
+              "severity": "potential",
+              "effort": 3
+            }
+          },
+          "labels": []
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Scale.0001": {
+      "id": "Scale.0001",
+      "description": "Statischer Inhalt erkannt.\n\nIhr aktueller Ansatz f\u00FCr die direkte Bereitstellung statischer Inhalte kann zu erh\u00F6hten Kosten, Leistungsproblemen, Wartungsproblemen (eine erneute Anwendungsbereitstellung f\u00FCr Inhalts\u00E4nderungen) und Sicherheitsrisiken f\u00FChren.\n\nErw\u00E4gen Sie, statische Inhalte in Azure Blob Storage zu verschieben und Azure CDN hinzuzuf\u00FCgen.",
+      "title": "Statischer Inhalt erkannt",
+      "severity": "optional",
+      "effort": 3,
+      "links": [
+        {
+          "title": "Azure Blob Storage",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2250574"
+        },
+        {
+          "title": "Azure\u00A0CDN",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2250392"
+        }
+      ],
+      "labels": []
+    },
+    "Database.0002": {
+      "id": "Database.0002",
+      "description": "SQL-Datenbankverbindung erkannt.\n\nStellen Sie sicher, dass die Datenbank in Azure verf\u00FCgbar/erreichbar ist.\n\nFalls nicht, gibt es mehrere M\u00F6glichkeiten, um Ihre Daten nach Azure zu verschieben:\n    1. Migrieren Sie zu Azure SQL-Datenbank.\n    2. Erw\u00E4gen Sie Azure SQL Managed Instance, wenn Sie Features ben\u00F6tigen, die in Azure SQL-Datenbank nicht verf\u00FCgbar sind und Sie keine VM verwenden m\u00F6chten.\n    3. Migrieren Sie Ihre Datenbankserver direkt zu SQL Server auf Azure-VMs.\n\nUm den Aufwand f\u00FCr die Datenbankmigration zu bewerten, k\u00F6nnen Sie das Azure Migrate-Tool verwenden, siehe Link unten.",
+      "title": "SQL-Datenbankverbindung erkannt",
+      "severity": "potential",
+      "effort": 3,
+      "links": [
+        {
+          "title": "SQL Server-Datenbank zu Azure migrieren",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2251731"
+        },
+        {
+          "title": "Azure SQL Managed Instance",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2251613"
+        },
+        {
+          "title": "Azure Migrate",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2252410"
+        }
+      ],
+      "labels": []
+    },
+    "Identity.0002": {
+      "id": "Identity.0002",
+      "description": "Ihre App verwendet die Windows-Authentifizierung, die auf Azure App Service, Azure Container Apps und Azure Kubernetes Service nicht unterst\u00FCtzt wird.\n\nAzure App Service bietet integrierte Authentifizierungs- und Autorisierungsfunktionen, sodass sich Benutzer anmelden und auf Daten zugreifen k\u00F6nnen, indem Sie minimalen oder gar keinen Code in Ihre Web-App schreiben.\n\nFolgen Sie dem Link unten, um weitere Informationen zu erfahren.",
+      "title": "Windows-Authentifizierung erkannt",
+      "severity": "mandatory",
+      "effort": 3,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2242883"
+        }
+      ],
+      "labels": []
+    },
+    "Security.0002": {
+      "id": "Security.0002",
+      "description": "Verbindungszeichenfolgen ohne Konfigurations-Generatoren erkannt.  \n\n Das direkte Aufbewahren von Verbindungszeichenfolgen in der App ist keine bew\u00E4hrte Methode und kann zu Sicherheitsrisiken, erh\u00F6hten Wartungsarbeiten, Skalierbarkeitsproblemen oder Konformit\u00E4tsstandards f\u00FChren (z.\u00A0B. PCI-DSS, DSGVO usw.). \n\n Es wird stattdessen empfohlen, Konfigurations-Generatoren zum Abrufen von Geheimnissen aus sicheren Quellen in der Azure-Umgebung zu verwenden.",
+      "title": "Verbindungszeichenfolgen ohne Konfigurations-Generatoren erkannt",
+      "severity": "optional",
+      "effort": 3,
+      "links": [
+        {
+          "title": "Konfigurations-Generatoren",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2250915"
+        },
+        {
+          "title": "Anwendungsgeheimnisse werden gespeichert",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2250916"
+        },
+        {
+          "title": "Zentralisierte App-Konfiguration und -Sicherheit",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2250733"
+        }
+      ],
+      "labels": []
+    },
+    "Configuration.0003": {
+      "id": "Configuration.0003",
+      "description": "Local application configuration detected. Azure App Configuration can be used as a centralized, cloud-based service for application settings that are currently stored in local configuration files. Moving this configuration to Azure App Configuration can help you externalize settings from code and deployment artifacts, centralize management across environments, and enable dynamic refresh and controlled access to configuration data.",
+      "title": "Local application configuration detected",
+      "severity": "potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "What is Azure App Configuration?",
+          "url": "https://learn.microsoft.com/azure/azure-app-configuration/overview"
+        },
+        {
+          "title": "Configuration management with Azure App Configuration",
+          "url": "https://aka.ms/appconfig/configuration-management"
+        }
+      ],
+      "labels": []
+    },
+    "Connection.0001": {
+      "id": "Connection.0001",
+      "description": "Verbindungszeichenfolge erkannt. M\u00F6glicherweise ist sie nicht verf\u00FCgbar, wenn Ihre App zu Azure migriert wird.\n\n\u00DCberpr\u00FCfen Sie dies, und stellen Sie sicher, dass sie \u00FCber Azure funktioniert. Wenn Sie eine Verbindung mit einer Datenbank herstellen, m\u00FCssen Sie die Datenbank m\u00F6glicherweise zu Azure migrieren. Daf\u00FCr gibt es mehrere M\u00F6glichkeiten:\n    1. Migrieren Sie zu Azure SQL-Datenbank, um zus\u00E4tzliche Vorteile zu nutzen (siehe Link unten).\n    2. Erw\u00E4gen Sie Azure SQL Managed Instance, wenn Sie Features ben\u00F6tigen, die in Azure SQL-Datenbank nicht verf\u00FCgbar sind und Sie keine VM verwenden m\u00F6chten.\n    3. Migrieren Sie Ihre Datenbankserver direkt zu SQL Server auf Azure-VMs.\n\nUm den Aufwand f\u00FCr die Datenbankmigration zu bewerten, k\u00F6nnen Sie das Azure Migrate-Tool verwenden, siehe Link unten.",
+      "title": "Verbindungszeichenfolge wurde erkannt",
+      "severity": "potential",
+      "effort": 3,
+      "links": [
+        {
+          "title": "SQL Server-Datenbank zu Azure migrieren",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2251731"
+        },
+        {
+          "title": "Azure SQL Managed Instance",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2251613"
+        },
+        {
+          "title": "Azure Migrate",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2252410"
+        }
+      ],
+      "labels": []
+    },
+    "Local.0003": {
+      "id": "Local.0003",
+      "description": "Ihre Anwendung verf\u00FCgt \u00FCber lokale oder Netzwerk-E/A-Vorg\u00E4nge.\n\nWenn Sie verwaltete Instanz auf Azure App Service als Ziel verwenden, verlagern Sie persistente E/A auf Storage-Mounts (Azure Files/UNC). Beschr\u00E4nken Sie lokale Schreibvorg\u00E4nge auf tempor\u00E4re Daten. Verbinden Sie sich mit externen Abh\u00E4ngigkeiten \u00FCber private Endpunkte/VNet, um Latenz zu reduzieren.\n\nE/A-Vorg\u00E4nge au\u00DFerhalb des Anwendungsordners sind auf Azure App Service m\u00F6glicherweise nicht verf\u00FCgbar. \u00DCberpr\u00FCfen Sie dies, und stellen Sie sicher, dass E/A-APIs versuchen, auf Pfade zuzugreifen, die verf\u00FCgbar sind, wenn Ihre App in der App Service-Sandbox ausgef\u00FChrt wird. Wenn Sie die Containerhostingoption ausw\u00E4hlen, ist Ihr Szenario m\u00F6glicherweise weiterhin fehlerhaft oder weist Skalierbarkeitsprobleme auf.\n\nM\u00F6gliche L\u00F6sungen:\n    1. Dateien, die die Anwendung ben\u00F6tigt, k\u00F6nnen mit der Anwendung bereitgestellt oder in Azure Storage abgelegt werden. Sie k\u00F6nnen Azure Storage-Dateifreigaben als Drop-In-Ersatz f\u00FCr die lokale Dateifreigabe verwenden.\n    2. Andere Dienste, von denen die Anwendung abh\u00E4ngt, m\u00FCssen m\u00F6glicherweise zu Azure migriert werden. Auf diese Weise profitieren Sie von einer geringeren Latenz in der Cloud.\n    3. Wenn Ihre Anwendung von Diensten abh\u00E4ngig ist, die lokal ausgef\u00FChrt werden, k\u00F6nnen Sie Ihre lokalen und Azure-Netzwerke mit ExpressRoute, Hybridverbindungen oder VPN-L\u00F6sungen verbinden.",
+      "title": "Es wurden lokale oder Netzwerk-E/A-Vorg\u00E4nge erkannt.",
+      "severity": "potential",
+      "effort": 3,
+      "links": [
+        {
+          "title": "[Verwaltete Instanz] Speicherbereitstellungen",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2346952"
+        },
+        {
+          "title": "Azure-Dateifreigabe",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2242591"
+        },
+        {
+          "title": "ExpressRoute",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2250577"
+        },
+        {
+          "title": "Hybridverbindungen",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2242588"
+        },
+        {
+          "title": "Lokales Netzwerk verbinden",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2242591"
+        },
+        {
+          "title": "Entwurf f\u00FCr Aufskalieren",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2251007"
+        }
+      ],
+      "labels": []
+    },
+    "Security.0003": {
+      "id": "Security.0003",
+      "description": "Hartcodierte vertrauliche Daten erkannt.\n\nWenn Sie die Verwaltete Instanz f\u00FCr Azure App Service als Ziel verwenden, lagern Sie Geheimnisse in Azure Key Vault oder Azure App Configuration aus. Verwenden Sie eine verwaltete Identit\u00E4t anstelle von Kennw\u00F6rtern oder eingebetteten Verbindungszeichenfolgen.\n\nWenn Sie hingegen andere Azure-Computedienste als Ziel verwenden:\n\nVermeiden Sie es, vertrauliche Daten wie Kennw\u00F6rter, IDs, Token usw. direkt in Konfigurationsdateien und Code zu platzieren, da dies die Sicherheit Ihrer Anwendung beeintr\u00E4chtigt.\n\nVerwenden Sie Azure App Configuration oder Azure Key Vault zum Speichern von Geheimnissen.",
+      "title": "Hartcodierte vertrauliche Daten erkannt",
+      "severity": "optional",
+      "effort": 3,
+      "links": [
+        {
+          "title": "Zentralisierte App-Konfiguration und -Sicherheit",
+          "url": "https://go.microsoft.com/fwlink/?LinkID=2250733"
+        }
+      ],
+      "labels": []
+    }
+  }
+}

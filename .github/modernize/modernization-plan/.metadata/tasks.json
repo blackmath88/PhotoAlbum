@@ -23,6 +23,9 @@
       "type": "security",
       "id": "002-security-compliance",
       "description": "Scan project dependencies for known CVEs and remediate vulnerabilities before the modernization is considered complete.",
+      "status": "success",
+      "taskSummary": "No known CVEs were found in the current dependency graph. Build and tests passed without remediation changes.",
+      "cveReport": "/Users/achim/dev/microhack-challenge-2/PhotoAlbum/.github/modernize/modernization-plan/002-security-compliance/final-cve-report.json",
       "reason": "Every modernization plan must include security remediation so the upgraded application does not carry known dependency vulnerabilities forward.",
       "requirements": "Scan all project dependencies for known CVEs and upgrade vulnerable packages to the minimum patched version. If remediation requires a major version change, document the affected dependency, the current version, the target major version, and the associated breaking-change risk. Confirm the project still builds and tests successfully after remediation.",
       "dependencies": [
