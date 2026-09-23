@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Tasks template for modernization plan. Generate this file alongside plan.md to track individual migration tasks.",
+  "tasks": [
+    {
+      "type": "upgrade",
+      "id": "001-upgrade-dotnet-to-net10",
+      "description": "Upgrade PhotoAlbum to .NET 10.",
+      "status": "success",
+      "taskSummary": "Upgraded PhotoAlbum and its test project to .NET 10, aligned EF Core and test package versions, and preserved the existing gallery behavior.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "passUnitTests": "true"
+      },
+      "reason": "The application is currently on .NET 9, and the modernization request explicitly calls for a .NET 10 upgrade.",
+      "requirements": "Upgrade the application and test projects to .NET 10, keeping the current app behavior intact. Align project targets and compatible package references to the .NET 10 baseline while preserving existing build and test coverage.",
+      "successCriteria": {
+        "passBuild": "true",
+        "passUnitTests": "true"
+      }
+    },
+    {
+      "type": "security",
+      "id": "002-security-compliance",
+      "description": "Scan project dependencies for known CVEs and remediate vulnerabilities before the modernization is considered complete.",
+      "reason": "Every modernization plan must include security remediation so the upgraded application does not carry known dependency vulnerabilities forward.",
+      "requirements": "Scan all project dependencies for known CVEs and upgrade vulnerable packages to the minimum patched version. If remediation requires a major version change, document the affected dependency, the current version, the target major version, and the associated breaking-change risk. Confirm the project still builds and tests successfully after remediation.",
+      "dependencies": [
+        "001-upgrade-dotnet-to-net10"
+      ],
+      "successCriteria": {
+        "passBuild": "true",
+        "passUnitTests": "true"
+      }
+    }
+  ],
+  "metadata": {
+    "planName": "modernization-plan",
+    "projectName": "PhotoAlbum",
+    "language": ".NET",
+    "createdAt": "2026-09-23T11:42:01.186+02:00",
+    "version": "1.0"
+  }
+}
